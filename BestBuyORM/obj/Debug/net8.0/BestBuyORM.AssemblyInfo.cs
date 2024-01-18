@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BestBuyORM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57b661465d47b46aa9a8e53f798ec4baac2e2429")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+541960a4c0f6097f33a8b77274d760ccec66a508")]
 [assembly: System.Reflection.AssemblyProductAttribute("BestBuyORM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BestBuyORM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -36,9 +36,6 @@ namespace BestBuyORM
                 new { departmentname = newDepartmentName });
         }
 
-        public void InsertDepartment()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
