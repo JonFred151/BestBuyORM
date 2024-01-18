@@ -19,14 +19,11 @@ namespace BestBuyORM
 
         }
 
-
-
         public IEnumerable<Department> GetAllDepartments()
         {
             var depos = _connection.Query<Department>("SELECT * FROM departments ");
 
             return depos;
-
 
         }
 

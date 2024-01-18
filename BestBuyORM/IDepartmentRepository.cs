@@ -12,6 +12,6 @@ namespace BestBuyORM
         // that confirms to IEnumerable<T>
         IEnumerable<Department> GetAllDepartments();
 
-        void InsertDepartment();
+        //void InsertDepartment();
     }
 }
