@@ -20,8 +20,22 @@ namespace BestBuyORM
             
             #endregion
 
+            IDbConnection connection = new MySqlConnection(connString);
+            var Prod = new DapperProductRepository(connection);
 
-            IDbConnection conn = new MySqlConnection(connString);
+            Prod.CreateProduct("New Stuff", 20, 1);
+            var products = Prod.GetAllProducts();
+            foreach (var product in products)
+            {
+                Console.WriteLine($"{product.ProductID} {product.Name}");}
+            }
+        /* 
+         * 
+         * First exercise
+         * 
+         * 
+         * 
+         *    IDbConnection conn = new MySqlConnection(connString);
             DapperDepartmentRepository repo = new DapperDepartmentRepository(conn);
 
             Console.WriteLine("Hello user, here are the current departments:");
@@ -47,6 +61,13 @@ namespace BestBuyORM
 
         }
 
+        
+
+
+           
+
+
+        }
         private static void printing(IEnumerable<Department> depos)
         {
             foreach (var depo in depos)
@@ -54,5 +75,6 @@ namespace BestBuyORM
                 Console.WriteLine($"Id: {depo.DepartmentID} Name: {depo.Name}");
             }
         }
+       */
     }
 }
